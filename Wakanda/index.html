@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyas Wakanda</title>
+    <script src="https://kit.fontawesome.com/c3e2a4c2b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="./img/logotitulo.jpg" alt="store logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of navbar-->
+
+    <!-- hero-->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-tittle"> Colección de Verano</h1>
+            <button class="banner-btn">Compra ahora</button>
+        </div>
+    </header>
+
+    <!-- end of hero -->
+    
+    <!-- Products -->
+    <section class="products">
+        <div class="section-title">
+            <h2>nuestros productos</h2>
+        </div>
+        <div class="products-center">
+         <!-- single product 1  -->
+         <article class="product">
+             <div class="img-container">
+                 <img src="./img/producto1.jpg" alt="producto" class="product-img">
+                 <button class="bag-btn" data-id="1">
+                     <i class="fas fa-shopping-cart"></i>
+                     Añadir al carrito
+                 </button>
+             </div>
+             <h3>Collar</h3>
+             <h4>$20.00</h4>
+         </article>
+        <!-- end of single product-->
+
+            <!-- single product 2  -->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-2.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="2">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$20.00</h4>
+        </article>
+
+           <!-- single product 3  -->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-3.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="3">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$10.00</h4>
+        </article>
+          
+           <!-- single product  4-->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-4.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="4">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$15.25</h4>
+        </article>
+           <!-- end single product  -->
+
+           <!-- single product  5-->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-5.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="5">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$15.25</h4>
+        </article>
+           
+           <!-- single product  6-->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-6.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="6">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$15.25</h4>
+        </article>
+           
+           <!-- single product  7-->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-7.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="7">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$15.25</h4>
+        </article>
+           
+           <!-- single product  8-->
+         <article class="product">
+            <div class="img-container">
+                <img src="./img/product-8.jpg" alt="producto" class="product-img">
+                <button class="bag-btn" data-id="8">
+                    <i class="fas fa-shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Sarcillos</h3>
+            <h4>$15.25</h4>
+        </article>
+           <!-- end single product  -->
+        </div>
+    </section>
+    <!-- End of Products -->
+
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>tu carrito </h2>
+            <div class="cart-content">
+                <!-- cart item -->
+                <div class="cart-item">
+                    <img src="./img/producto1.jpg" alt="producto">
+                    <div>
+                        <h4>collar</h4>
+                        <h5>$20.00</h5>
+                        <span class="remove-item"> quitar </span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!-- end fo cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>tu total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart-banner-btn">limpiar carrito</button>
+            </div>
+        </div>
+    </div>
+    <!--  end of cart -->
+
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
