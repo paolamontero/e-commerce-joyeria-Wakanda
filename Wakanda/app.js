@@ -54,12 +54,39 @@ class UI {
       `;
         })
         productsDOM.innerHTML = result;
-
+    }
+    getBagButtons() {
+        const buttons = [...document.querySelectorAll(".bag-btn")];
+        buttons.forEach(button => {
+            let id = button.dataset.id;
+            let inCart = cart.find(item => item.id === id);
+            if (inCart) {
+                button.innerText = "En Carrito";
+                button.disabled = true;
+            }
+            else {
+                button.addEventListener('click', (event) => {
+                    event.target.innerText = "En Carrito";
+                    event.target.disabled = true;
+                    //get products from products
+                    //add product to the cart
+                    //save cartin local storage
+                    // set cart values 
+                    //update sarcillos to zarcillos
+                    //display cart items
+                    //show the cart 2.11
+                });
+            }
+        });
     }
 }
 
 //local storage
-class Storage { }
+class Storage {
+    static saveProducts(products) {
+        localStorage.setItem("products", JSON.stringify(products));
+    }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
@@ -67,33 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     //get all products
-    products.getProducts().then(products => ui.displayProducts(products))
-
+    products.getProducts().then(products => {
+        ui.displayProducts(products);
+        Storage.saveProducts(products);
+    }).then(() => {
+        ui.getBagButtons();
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
